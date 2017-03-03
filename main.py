@@ -1,13 +1,18 @@
 import re
 
 print("Calculator")
+print("Type 'quit' to exit\n")
 
 previous = 0
 run = True
 
 def performMath():
+
     equation = input("Enter equation:")
-    print("Your Typed", equation)
+    if equation == 'quit':
+        run = False
+    else:
+        print("You typed", equation)
 
 while run:
     performMath()
